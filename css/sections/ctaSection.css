@@ -166,11 +166,14 @@
   .cta_form {
     width: 100%;
   }
-}
 
-/* ===== RESPONSIVE (mobile heading scaling) ===== */
-@media (max-width: 800px) {
   .cta_left h2 {
     font-size: 26px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cta_box {
+    padding: 30px;
   }
 }
