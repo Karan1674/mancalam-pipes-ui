@@ -454,12 +454,18 @@
     width: 100%;
   }
 
+  .zoom_lens{
+    width: 80px;
+    height: 80px;
+  }
+
   /* move zoom below image */
   .zoom_result {
     left: 50%;
     top: 105%;
     transform: translateX(-50%);
-    width: 50%;
+    width: 200px;
+    height: 200px;
   }
 }
 
