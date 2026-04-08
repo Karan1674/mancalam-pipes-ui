@@ -112,6 +112,8 @@ This project demonstrates how powerful and scalable applications can be built us
 
 ## 📁 Project Structure
 
+```
+
 project-root/
 │
 ├── index.html
@@ -150,6 +152,8 @@ project-root/
 │
 └── README.md
 
+```
+
 ---
 
 ## ⚙️ Getting Started
@@ -169,10 +173,13 @@ cd mancalam-pipes
 ```
 
 ### 3️⃣ Run the Project
+```
+
 - Open index.html directly  
 OR  
 - Use Live Server (recommended for development)
 
+```
 ---
 
 ## 📌 Implementation Details
