@@ -1,0 +1,41 @@
+/* Importing base-specific styles from separate file */
+@import url('./sections/base.css');
+
+/* Importing header-specific styles from separate file */
+@import url('./sections/header.css');
+
+/* Importing hero section styles from separate file */
+@import url('./sections/heroSection.css');
+
+/* Importing tech section styles from separate file */
+@import url('./sections/techSection.css');
+
+/* Importing Model styles from separate file */
+@import url('./sections/model.css');
+
+/* Importing features section styles from separate file */
+@import url('./sections/featuresSection.css');
+
+/* Importing faq section styles from separate file */
+@import url('./sections/faqSection.css');
+
+/* Importing application section styles from separate file */
+@import url('./sections/applicationSection.css');
+
+/* Importing process section styles from separate file */
+@import url('./sections/processSection.css');
+
+/* Importing testimonial section styles from separate file */
+@import url('./sections/testimonialSection.css');
+
+/* Importing portfolio section styles from separate file */
+@import url('./sections/portfolioSection.css');
+
+/* Importing resource section styles from separate file */
+@import url('./sections/resourceSection.css');
+
+/* Importing cta section styles from separate file */
+@import url('./sections/ctaSection.css');
+
+/* Importing footer styles from separate file */
+@import url('./sections/footer.css');

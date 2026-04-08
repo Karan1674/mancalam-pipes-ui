@@ -1,0 +1,245 @@
+/* ===== PORTFOLIO SECTION (overall layout, spacing, background) ===== */
+.portfolio {
+  margin: 10px 0;
+  padding: 100px 0;
+  border-bottom: 1px solid #e1e3e8;
+  color: #ffffff;
+}
+
+/* ===== CONTAINER (vertical stacking with spacing) ===== */
+.portfolio_container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* ===== HEADER (title + description alignment) ===== */
+.portfolio_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== HEADER TITLE (main heading styling) ===== */
+.portfolio_header h2 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 44px;
+  color: #0d0d0d;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* ===== HEADER DESCRIPTION (supporting text styling) ===== */
+.portfolio_header p {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  color: #4d545c;
+  max-width: 800px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* ===== CARDS CONTAINER (layout for portfolio items) ===== */
+.portfolio_cards {
+  display: flex;
+  gap: 24px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+/* ===== CARD (individual portfolio item container) ===== */
+.portfolio_card {
+  width: 380px;
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px 0px #1b1c1d0a;
+  border: 1.25px solid #cfd1d4;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ===== CARD TOP (title + description section) ===== */
+.portfolio_card .top {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===== CARD TITLE (portfolio item heading) ===== */
+.portfolio_card h3 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: #0d0d0d;
+}
+
+/* ===== CARD TEXT (portfolio description) ===== */
+.portfolio_card p {
+  color: #4d545c;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+/* ===== CARD BOTTOM (image + button section) ===== */
+.portfolio_card .bottom {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== CARD IMAGE (portfolio preview image) ===== */
+.portfolio_card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ===== OUTLINE BUTTON (secondary CTA styling) ===== */
+.portfolio_card .bottom .btn-outline {
+  padding: 10px 24px;
+  border-radius: 12px;
+  border: 1px solid #2b39903d;
+  color: #2b39900d;
+  background: #f3f4f6;
+  color: #2b3990;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* ===== BUTTON HOVER (interaction feedback) ===== */
+.portfolio_card .bottom .btn-outline:hover {
+  background: #e5e7eb;
+}
+
+/* ===== CTA SECTION (bottom call-to-action box) ===== */
+.portfolio_cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #cfd1d4;
+  box-shadow: 0px 2px 4px 0px #1b1c1d0a;
+  border-radius: 12px;
+  padding: 20px;
+  background: #ffffff;
+}
+
+/* ===== CTA TEXT WRAPPER (left content block) ===== */
+.cta_text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ===== CTA TITLE (highlight heading text) ===== */
+.cta_text h4 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: #0d0d0d;
+}
+
+/* ===== CTA HIGHLIGHT TEXT (colored span) ===== */
+.cta_text span {
+  color: #2b3990;
+}
+
+/* ===== CTA DESCRIPTION (supporting text) ===== */
+.cta_text p {
+  color: #262a2e;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+/* ===== PRIMARY BUTTON (CTA action button) ===== */
+.portfolio_cta .btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2b3990;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ===== BUTTON TEXT (CTA typography) ===== */
+.portfolio_cta .btn-primary span {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+/* ===== BUTTON HOVER (interaction feedback) ===== */
+.portfolio_cta .btn-primary:hover {
+  background: #1f2a6d;
+}
+
+/* ===== RESPONSIVE (tablet layout adjustments) ===== */
+@media (max-width: 800px) {
+  .portfolio_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio_card {
+    width: 100%;
+  }
+
+  .portfolio_card .bottom img {
+    height: 330px;
+  }
+
+  .cta_text h4 {
+    font-size: 22px;
+  }
+
+  .cta_text p {
+    font-size: 15px;
+  }
+}
+
+/* ===== RESPONSIVE (mobile layout adjustments) ===== */
+@media (max-width: 600px) {
+  .portfolio_cta {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .portfolio_card .bottom img {
+    height: 150px;
+  }
+}

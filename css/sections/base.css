@@ -1,0 +1,65 @@
+
+/* ===== BASE STYLES ===== */
+/* Reset default browser spacing and ensure consistent box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global font family applied to entire website */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== CONTAINER ===== */
+/* Reusable layout wrapper to center content and control width */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+
+.section-bg{
+  background-image: url("../../assets/heroNoiseImage.png");
+}
+
+/* ===== RESPONSIVE ===== */
+/* Adjust container width and padding for different screen sizes */
+
+/* Large screens (up to 1440px) */
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 100px;
+  }
+}
+
+/* Medium-large screens */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+/* Tablets / smaller desktops */
+@media (max-width: 1020px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 800px) {
+  .container {
+    padding: 0 48px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 16px;
+  }
+}

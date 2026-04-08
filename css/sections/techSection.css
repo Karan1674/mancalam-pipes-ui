@@ -1,0 +1,149 @@
+/* ===== TECH SECTION (overall layout + dark background) ===== */
+.tech {
+  background: #111827;
+  padding: 100px 0;
+  color: #fff;
+}
+
+/* ===== TECH CONTAINER (vertical layout with spacing) ===== */
+.tech .tech_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 56px;
+  width: 100%;
+}
+
+/* ===== HEADER WRAPPER (title + description alignment) ===== */
+.tech_header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== HEADER TITLE (main heading styling) ===== */
+.tech_header h2 {
+  font-family: Urbanist;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+/* ===== HEADER DESCRIPTION (subtitle text styling) ===== */
+.tech_header p {
+  font-weight: 400;
+  font-size: 18px;
+  width: 80%;
+  line-height: 160%;
+  letter-spacing: -0.6%;
+}
+
+/* ===== TABLE WRAPPER (container for table with border + shadow) ===== */
+.tech_table_wrapper {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1.25px solid #374151;
+  box-shadow: 0px 2px 4px 0px #1b1c1d0a;
+}
+
+/* ===== TABLE STRUCTURE (base table layout) ===== */
+.tech_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* ===== TABLE HEADER (top row styling) ===== */
+.tech_table thead {
+  background: #374151;
+}
+
+.tech_table th {
+  padding: 16px 24px;
+  text-align: left;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.6%;
+}
+
+/* ===== TABLE BODY (data rows styling) ===== */
+.tech_table td {
+  padding: 16px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ===== ROW HOVER EFFECT (subtle highlight on hover) ===== */
+.tech_table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* ===== BUTTON WRAPPER (center align button) ===== */
+.tech_action {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ===== DOWNLOAD BUTTON (style + layout) ===== */
+.tech_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+/* ===== BUTTON HOVER (interaction feedback) ===== */
+.tech_btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== TABLET RESPONSIVE (adjust paragraph width) ===== */
+@media (max-width: 1020px) {
+  .tech_header p {
+    width: 80%;
+  }
+}
+
+/* ===== MOBILE RESPONSIVE (smaller fonts + compact layout) ===== */
+@media (max-width: 480px) {
+  .tech_header h2 {
+    font-size: 36px;
+  }
+
+  .tech_header p {
+    font-size: 16px;
+  }
+
+  .tech_table th {
+    font-size: 14px;
+  }
+
+  .tech_table td {
+    font-size: 14px;
+  }
+
+  .tech_btn {
+    font-size: 14px;
+  }
+}

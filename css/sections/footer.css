@@ -1,0 +1,208 @@
+/* ===== FOOTER SECTION (overall layout, spacing, background) ===== */
+.footer {
+  margin-top: 10px;
+  border-bottom: 1px solid #e1e3e8;
+  color: #ffffff;
+}
+
+/* ===== FOOTER CONTENT (main wrapper with vertical spacing) ===== */
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 0px;
+}
+
+/* ===== TOP BAR (logo + tagline container) ===== */
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f8f9;
+  border: 1px solid #cfd1d4;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px 0px #1b1c1d0a;
+  padding: 32px;
+}
+
+/* ===== LOGO CONTAINER (left side brand area) ===== */
+.footer_logo {
+  flex: 1;
+  flex-basis: 60%;
+}
+
+/* ===== LOGO IMAGE (brand logo sizing) ===== */
+.footer_top img {
+  height: 40px;
+}
+
+/* ===== TAGLINE TEXT (brand description) ===== */
+.footer_top p {
+  flex-basis: 40%;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  color: #0d0d0d;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+/* ===== HIGHLIGHT TEXT (colored brand emphasis) ===== */
+.footer_top span {
+  color: #2b3990;
+}
+
+/* ===== MAIN FOOTER (columns layout container) ===== */
+.footer_main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1240px;
+}
+
+/* ===== COLUMN (individual footer section) ===== */
+.footer_col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 250px;
+}
+
+/* ===== COLUMN TITLE (section headings) ===== */
+.footer_col h4 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.6%;
+  color: #0d0d0d;
+}
+
+/* ===== COLUMN LINKS (navigation links styling) ===== */
+.footer_col a {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.6%;
+  color: #535a61;
+  text-decoration: none;
+}
+
+/* ===== LINK HOVER (interaction feedback) ===== */
+.footer_col a:hover {
+  color: #2b3990;
+}
+
+/* ===== CONTACT TEXT (address, phone, email layout) ===== */
+.footer_col p {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.6%;
+  color: #535a61;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+/* ===== CONTACT ICONS (icons styling) ===== */
+.footer_col i {
+  color: #2b3990;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+/* ===== SOCIAL ICONS (social media links container) ===== */
+.socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* ===== SOCIAL ICON STYLE (icon appearance) ===== */
+.socials i {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ===== FOOTER BOTTOM (copyright + links section) ===== */
+.footer_bottom {
+  border-top: 1px solid #e1e3e8;
+  padding: 16px 10px;
+  background-color: #ffffff;
+}
+
+/* ===== BOTTOM CONTENT (layout for copyright + links) ===== */
+.footer_bottom .footer_bottom_content {
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+/* ===== COPYRIGHT TEXT (small footer text) ===== */
+.footer_bottom .footer_bottom_content p {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ===== FOOTER LINKS (legal/navigation links container) ===== */
+.footer_links {
+  display: flex;
+  gap: 20px;
+}
+
+/* ===== FOOTER LINK TEXT (styling for links) ===== */
+.footer_links a {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* ===== LINK HOVER (interaction feedback) ===== */
+.footer_links a:hover {
+  color: #2b3990;
+}
+
+/* ===== RESPONSIVE (mobile layout adjustments) ===== */
+@media (max-width: 700px) {
+  .footer_top {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer_top p {
+    font-size: 16px;
+  }
+
+  .footer_main {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer_col {
+    max-width: 100%;
+  }
+
+  .footer_bottom .footer_bottom_content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer_links {
+    flex-wrap: wrap;
+  }
+}

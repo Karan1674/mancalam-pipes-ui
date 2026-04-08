@@ -1,0 +1,122 @@
+/* ===== RESOURCES SECTION (overall layout, spacing, background) ===== */
+.resources {
+  margin: 10px 0;
+  padding: 100px 0;
+  border-bottom: 1px solid #e1e3e8;
+  color: #ffffff;
+}
+
+/* ===== CONTAINER (vertical stacking with spacing) ===== */
+.resources_container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ===== HEADER (title + description alignment) ===== */
+.resources_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== HEADER TITLE (main heading styling) ===== */
+.resources_header h2 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 44px;
+  color: #0d0d0d;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* ===== HEADER DESCRIPTION (supporting text styling) ===== */
+.resources_header p {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  color: #4d545c;
+  max-width: 800px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* ===== BOX (container for all resource items) ===== */
+.resources_box {
+  background: #ffffff;
+  border: 1px solid #cfd1d4;
+  box-shadow: 0px 2px 4px 0px #1b1c1d0a;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===== RESOURCE ITEM (individual row layout) ===== */
+.resource_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ===== RESOURCE TEXT (left side label) ===== */
+.resource_item span {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  color: #0d0d0d;
+  opacity: 0.8;
+}
+
+/* ===== RESOURCE LINK (download/view action) ===== */
+.resource_item a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== LINK TEXT (CTA label styling) ===== */
+.resource_item a span {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 15px;
+  color: #2b3990;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+/* ===== LINK ICON (arrow/download icon styling) ===== */
+.resource_item a i {
+  font-size: 14px;
+  color: #2b3990;
+}
+
+/* ===== HOVER EFFECT (link underline interaction) ===== */
+.resource_item a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE (mobile layout adjustments) ===== */
+@media (max-width: 600px) {
+  .resource_item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e1e3e8;
+  }
+}

@@ -1,0 +1,187 @@
+/* ===== APPLICATIONS SECTION (overall layout, spacing, background) ===== */
+.applications {
+  margin: 20px 0;
+  padding: 100px 0;
+  border-bottom: 1px solid #e1e3e8;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: #ffffff;
+}
+
+/* ===== CONTAINER (vertical stacking with spacing) ===== */
+.application_container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ===== HEADER (title + navigation layout) ===== */
+.applications_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+}
+
+/* ===== TEXT BLOCK (heading + description layout) ===== */
+.applications_text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-basis: 80%;
+  gap: 26px;
+}
+
+/* ===== HEADER TITLE (main heading styling) ===== */
+.applications_text h2 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 44px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: #0d0d0d;
+  width: 80%;
+}
+
+/* ===== HEADER DESCRIPTION (supporting text styling) ===== */
+.applications_text p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  width: 80%;
+  color: #4d545c;
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+/* ===== NAV BUTTONS (slider controls container) ===== */
+.applications_nav {
+  display: flex;
+  gap: 16px;
+}
+
+/* ===== NAV BUTTON (individual button styling) ===== */
+.app_btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 80px;
+  box-shadow: 0px 2px 4px 0px #1b1c1d0a;
+  border: 1px solid #cfd1d4;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== NAV ICON (arrow icon inside button) ===== */
+.app_btn i {
+  font-size: 14px;
+}
+
+/* ===== DISABLED STATE (inactive button styling) ===== */
+.app_btn.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* ===== SLIDER (horizontal scroll container) ===== */
+.applications_slider {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+/* ===== SCROLLBAR HIDE (clean UI without scrollbar) ===== */
+.applications_slider::-webkit-scrollbar {
+  display: none;
+}
+.applications_slider {
+  scrollbar-width: none;
+}
+
+/* ===== CARD (individual application item container) ===== */
+.app_card {
+  width: 360px;
+  height: 360px;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* ===== CARD IMAGE (background image styling) ===== */
+.app_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== OVERLAY (gradient + content overlay on image) ===== */
+.app_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  backdrop-filter: blur(1px);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.579217) 40.23%,
+    rgba(0, 0, 0, 0.8) 75.96%
+  );
+}
+
+/* ===== OVERLAY TITLE (card heading text) ===== */
+.app_overlay h4 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+/* ===== OVERLAY TEXT (card description text) ===== */
+.app_overlay p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  width: 90%;
+  line-height: 22px;
+  letter-spacing: -0.6%;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* ===== RESPONSIVE (mobile layout adjustments) ===== */
+@media (max-width: 600px) {
+
+  .applications_header {
+    width: 100%;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+
+  .applications_text h2 {
+    font-size: 36px;
+    width: 100%;
+  }
+
+  .applications_text p {
+    width: 100%;
+    font-size: 16px;
+    width: 70%;
+  }
+}

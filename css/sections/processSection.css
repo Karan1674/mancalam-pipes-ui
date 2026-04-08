@@ -1,0 +1,307 @@
+/* ===== PROCESS SECTION (overall layout, spacing, background) ===== */
+.process {
+  margin: 10px 0;
+  padding: 100px 0;
+  border-bottom: 1px solid #e1e3e8;
+  color: #ffffff;
+}
+
+/* ===== CONTAINER (vertical stacking with spacing) ===== */
+.process_container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* ===== HEADER (title + description center aligned) ===== */
+.process_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===== HEADER TITLE (main heading styling) ===== */
+.process_header h2 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 44px;
+  max-width: 800px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #0d0d0d;
+}
+
+/* ===== HEADER DESCRIPTION (supporting text styling) ===== */
+.process_header p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4d545c;
+  max-width: 800px;
+}
+
+/* ===== PROCESS BOX (tabs + content wrapper) ===== */
+.process_box {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 16px 32px -12px #585c5f1a;
+  border: 1.25px solid #cfd1d4;
+  max-width: 1240px;
+}
+
+/* ===== TABS CONTAINER (horizontal step navigation) ===== */
+.process_tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* ===== TAB BUTTON (individual step styling) ===== */
+.tab {
+  padding: 8px 16px;
+  border-radius: 32px;
+  border: 1px solid #cfd1d4;
+  background: #fff;
+  cursor: pointer;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.6%;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 10;
+}
+
+/* ===== TAB CONNECTOR LINE (divider between steps) ===== */
+.line {
+  flex: 1;
+  height: 1.5px;
+  background: #cfd1d4;
+}
+
+/* ===== ACTIVE TAB (highlighted current step) ===== */
+.tab.active {
+  background: #2b3990;
+  color: #fff;
+  border-color: #2b3990;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+}
+
+/* ===== CONTENT CARD (main process content layout) ===== */
+.process_card {
+  display: flex;
+  gap: 46px;
+  background: #fff;
+}
+
+/* ===== LEFT SIDE (textual content) ===== */
+.process_left {
+  flex: 1;
+  flex-basis: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 46px;
+}
+
+/* ===== LEFT TITLE (step heading) ===== */
+.process_left h3 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #0D0D0D;
+  line-height: 160%;
+  letter-spacing: -0.6%;
+}
+
+/* ===== LEFT DESCRIPTION (step explanation) ===== */
+.process_left p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.6%;
+  color: #4D545C;
+}
+
+/* ===== FEATURE LIST (bullet points container) ===== */
+.process_left ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  gap: 12;
+}
+
+/* ===== LIST ITEM (icon + text alignment) ===== */
+.process_left li {
+  display: flex;
+  gap: 6px;
+}
+
+/* ===== LIST TEXT (bullet content styling) ===== */
+.process_left li span {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  color: #0D0D0D;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+/* ===== LIST ICON (checkmark styling) ===== */
+.process_left li i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #2b3990;
+}
+
+/* ===== RIGHT SIDE (image container) ===== */
+.process_right {
+  flex: 1;
+  flex-basis: 45%;
+}
+
+/* ===== PROCESS IMAGE (visual representation) ===== */
+.process_right img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ===== RESPONSIVE (tablet: hide tabs + stack layout) ===== */
+@media (max-width: 800px) {
+  .process_tabs {
+    display: none;
+  }
+
+  .process_card {
+    flex-direction: column;
+  }
+
+  .process_right img {
+    border-radius: 14px;
+  }
+
+  .process_nav {
+    display: flex;
+  }
+
+  .process_header h2 {
+    font-size: 22px;
+  }
+}
+
+/* ===== NAVIGATION WRAPPER (hidden by default) ===== */
+.process_nav {
+  display: none;
+}
+
+/* ===== DESKTOP NAVIGATION (overlay arrows on image) ===== */
+@media (min-width: 801px) {
+
+  .process_right {
+    position: relative;
+  }
+
+  .process_nav {
+    display: block;
+  }
+
+  /* ===== NAV BUTTONS (common styling) ===== */
+  .process_nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #e1e3e8;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  /* ===== PREVIOUS BUTTON POSITION ===== */
+  .prev_btn {
+    left: 12px;
+  }
+
+  /* ===== NEXT BUTTON POSITION ===== */
+  .next_btn {
+    right: 12px;
+  }
+
+  /* ===== HIDE BUTTON TEXT (desktop icons only) ===== */
+  .process_nav button span {
+    display: none;
+  }
+
+  /* ===== HIDE DIVIDER (not needed on desktop) ===== */
+  .nav_divider {
+    display: none;
+  }
+}
+
+/* ===== MOBILE NAVIGATION (buttons below image) ===== */
+@media (max-width: 800px) {
+
+  .process_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+
+  /* ===== MOBILE BUTTON STYLE (reset positioning) ===== */
+  .process_nav button {
+    position: static;
+    transform: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 20px;
+    display: flex;
+    gap: 6px;
+  }
+
+  /* ===== SHOW TEXT (mobile labels visible) ===== */
+  .process_nav button span {
+    display: inline;
+  }
+
+  /* ===== DIVIDER (line between buttons) ===== */
+  .nav_divider {
+    flex: 1;
+    height: 1px;
+    background: #e1e3e8;
+    margin: 0 10px;
+  }
+}
