@@ -5,7 +5,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript)
 ![Font Awesome](https://img.shields.io/badge/Font%20Awesome-6.x-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white)
 ![Responsive](https://img.shields.io/badge/Responsive-Design-green?style=for-the-badge)
-![No Framework](https://img.shields.io/badge/Framework-None-lightgrey?style=for-the-badge)
+
 
 ---
 
